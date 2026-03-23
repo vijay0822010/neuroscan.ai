@@ -1,0 +1,39 @@
+# NeuroScan AI — Python Dependencies
+# All versions pinned for reproducible Railway deployment
+
+# Web framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.18
+
+# HTTP client (Groq API calls)
+httpx==0.28.0
+
+# Config / environment
+pydantic==2.10.2
+pydantic-settings==2.6.1
+python-dotenv==1.0.1
+
+# Image processing (ResNet pipeline — Pillow for PIL.Image)
+Pillow==10.4.0
+
+# PDF report generation
+reportlab==4.2.5
+
+# Async file I/O
+aiofiles==24.1.0
+
+# Email validator (required by pydantic)
+email-validator==2.2.0
+
+# Starlette (bundled with FastAPI but pinned for stability)
+starlette==0.41.3
+
+# AnyIO (async backend)
+anyio==4.6.2
+
+# Click (used by uvicorn)
+click==8.1.7
+
+# h11 (HTTP/1.1 library used by uvicorn)
+h11==0.14.0

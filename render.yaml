@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: neuroscan-ai
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r requirements.txt && cd frontend && npm ci && npm run build && cd .."
+    startCommand: "python run.py"
+    healthCheckPath: /health
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_API_URL
+        value: https://api.groq.com/openai/v1/chat/completions
+      - key: GROQ_MODEL
+        value: meta-llama/llama-4-scout-17b-16e-instruct
+      - key: APP_VERSION
+        value: "2.1.0"
+      - key: PORT
+        value: "8000"

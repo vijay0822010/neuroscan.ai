@@ -1,0 +1,17 @@
+[phases.setup]
+nixPkgs = ["python311", "nodejs_20", "gcc", "zlib", "libjpeg", "freetype"]
+
+[phases.install]
+cmds = [
+  "pip install --upgrade pip",
+  "pip install -r requirements.txt",
+  "cd frontend && npm install"
+]
+
+[phases.build]
+cmds = [
+  "cd frontend && npm run build"
+]
+
+[start]
+cmd = "python run.py"

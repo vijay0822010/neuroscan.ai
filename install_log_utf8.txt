@@ -1,0 +1,160 @@
+﻿Collecting fastapi==0.115.5 (from -r requirements.txt (line 5))
+  Using cached fastapi-0.115.5-py3-none-any.whl.metadata (27 kB)
+Collecting uvicorn==0.32.1 (from uvicorn[standard]==0.32.1->-r requirements.txt (line 6))
+  Using cached uvicorn-0.32.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting python-multipart==0.0.18 (from -r requirements.txt (line 7))
+  Using cached python_multipart-0.0.18-py3-none-any.whl.metadata (1.8 kB)
+Collecting httpx==0.28.0 (from -r requirements.txt (line 10))
+  Using cached httpx-0.28.0-py3-none-any.whl.metadata (7.1 kB)
+Collecting pydantic==2.10.2 (from -r requirements.txt (line 13))
+  Using cached pydantic-2.10.2-py3-none-any.whl.metadata (170 kB)
+Collecting pydantic-settings==2.6.1 (from -r requirements.txt (line 14))
+  Using cached pydantic_settings-2.6.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting python-dotenv==1.0.1 (from -r requirements.txt (line 15))
+  Using cached python_dotenv-1.0.1-py3-none-any.whl.metadata (23 kB)
+Collecting Pillow==10.4.0 (from -r requirements.txt (line 18))
+  Using cached pillow-10.4.0.tar.gz (46.6 MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting reportlab==4.2.5 (from -r requirements.txt (line 21))
+  Using cached reportlab-4.2.5-py3-none-any.whl.metadata (1.5 kB)
+Collecting aiofiles==24.1.0 (from -r requirements.txt (line 24))
+  Using cached aiofiles-24.1.0-py3-none-any.whl.metadata (10 kB)
+Collecting email-validator==2.2.0 (from -r requirements.txt (line 27))
+  Using cached email_validator-2.2.0-py3-none-any.whl.metadata (25 kB)
+Collecting starlette==0.41.3 (from -r requirements.txt (line 30))
+  Using cached starlette-0.41.3-py3-none-any.whl.metadata (6.0 kB)
+Collecting anyio==4.6.2 (from -r requirements.txt (line 33))
+  Using cached anyio-4.6.2-py3-none-any.whl.metadata (4.7 kB)
+Collecting click==8.1.7 (from -r requirements.txt (line 36))
+  Using cached click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting h11==0.14.0 (from -r requirements.txt (line 39))
+  Using cached h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting typing-extensions>=4.8.0 (from fastapi==0.115.5->-r requirements.txt (line 5))
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting annotated-types>=0.6.0 (from pydantic==2.10.2->-r requirements.txt (line 13))
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.27.1 (from pydantic==2.10.2->-r requirements.txt (line 13))
+  Using cached pydantic_core-2.27.1.tar.gz (412 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+.\venv\Scripts\pip.exe :   
+error: 
+subprocess-exited-with-error
+At line:1 char:1
++ .\venv\Scripts\pip.exe 
+install -r requirements.txt 
+> install_log.txt  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (  error  
+  : subprocess-exited-with   
+ -error:String) [], Remot    
+eException
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+  
+  Preparing metadata 
+(pyproject.toml) did not run 
+successfully.
+  exit code: 1
+  
+  [24 lines of output]
+  Python reports SOABI: 
+cp314-win_amd64
+  Computed rustc target 
+triple: 
+x86_64-pc-windows-msvc
+  Installation directory: C:\
+Users\VIJAY\AppData\Local\puc
+cinialin\puccinialin\Cache
+  Rustup already downloaded
+  Installing rust to C:\Users
+\VIJAY\AppData\Local\puccinia
+lin\puccinialin\Cache\rustup
+  warn: It looks like you 
+have an existing rustup 
+settings file at:
+  warn: C:\Users\VIJAY\.rustu
+p\settings.toml
+  warn: Rustup will install 
+the default toolchain as 
+specified in the settings 
+file,
+  warn: instead of the one 
+inferred from the default 
+host triple.
+  warn: installing msvc 
+toolchain without its 
+prerequisites
+  info: profile set to 
+'minimal'
+  info: default host triple 
+is x86_64-pc-windows-msvc
+  warn: Updating existing 
+toolchain, profile choice 
+will be ignored
+  info: syncing channel 
+updates for 'stable-x86_64-pc
+-windows-msvc'
+  info: default toolchain 
+set to 'stable-x86_64-pc-wind
+ows-msvc'
+  Checking if cargo is 
+installed
+  cargo 1.94.0 (85eff7c80 
+2026-01-15)
+  
+  Cargo, the Rust package 
+manager, is not installed or 
+is not on PATH.
+  This package requires Rust 
+and Cargo to compile 
+extensions. Install it 
+through
+  the system's package 
+manager or via 
+https://rustup.rs/
+  
+  Checking for Rust 
+toolchain....
+  Rust not found, installing 
+into a temporary directory
+  [end of output]
+  
+  note: This error 
+originates from a 
+subprocess, and is likely 
+not a problem with pip.
+
+[notice] A new release of 
+pip is available: 25.2 -> 
+26.0.1
+[notice] To update, run: 
+python.exe -m pip install 
+--upgrade pip
+error: 
+metadata-generation-failed
+
+Encountered error while 
+generating package metadata.
+
+See above for output.
+
+note: This is an issue with 
+the package mentioned above, 
+not pip.
+hint: See above for details.

@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Environment — DO NOT commit real secrets
+# Comment this out if you want .env tracked for team use
+# .env
+
+# Frontend build output — generated during Railway build phase
+frontend/node_modules/
+frontend/dist/
+
+# Runtime directories
+uploads/
+reports/
+/tmp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
